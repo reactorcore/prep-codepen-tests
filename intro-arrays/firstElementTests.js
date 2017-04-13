@@ -3,6 +3,6 @@ describe("firstElement", function() {
     expect(firstElement([1,2,3])).toEqual(1);
   });
   it("should return null if the array is empty", function() {
-    expect(JSON.stringify(firstElementk([]))).toBe(JSON.stringify(null));
+    expect(JSON.stringify(firstElement([]))).toBe(JSON.stringify(null));
   });
 });
