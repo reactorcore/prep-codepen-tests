@@ -1,4 +1,4 @@
-cribe("repeatString", function() {
+describe("repeatString", function() {
   it("should return a string", function() {
     expect(typeof repeatString("dog")).toEqual("string");
   });
