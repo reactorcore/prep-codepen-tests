@@ -1,4 +1,4 @@
-cribe("isEven", function() {
+describe("isEven", function() {
   it("should return a boolean", function() {
     expect(typeof isEven(45)).toEqual("boolean");
   });
