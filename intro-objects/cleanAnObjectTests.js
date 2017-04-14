@@ -7,7 +7,10 @@ describe('clean', function() {
     _ttrs: 510852
   }
 
-  var resultObject = clean(dirtyObject);
+  var resultObject;
+  beforeEach(function() {
+    resultObject = clean(dirtyObject);  
+  });
 
   it('returns an object', function() {
     expect(typeof resultObject).toBe('object');
@@ -30,4 +33,3 @@ describe('clean', function() {
     }
   });
 });
-
