@@ -19,7 +19,11 @@ describe('countWords', function() {
 });
 
 describe('countWordsCaseInsensitive', function() {
-  var resultObject = countWordsCaseInsensitive('hello Hello hElLo HELlo');
+  var resultObject; 
+  beforeEach(function() {
+    resultObject = countWordsCaseInsensitive('hello Hello hElLo HELlo');
+  });
+
   it('is case insensitive', function() {
     expect(resultObject).toEqual({ hello: 4 });
   });
