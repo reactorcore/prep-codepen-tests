@@ -3,7 +3,7 @@ describe("addToFront", function() {
     expect(Array.isArray(addToFront([1, 2], 3))).toBe(true);
   });
 
-  it("should add an element to the end of an array", function() {
+  it("should add an element to the front of an array", function() {
     expect(addToFront([1, 2], 3)).toEqual([3, 1, 2]);
   });
 
